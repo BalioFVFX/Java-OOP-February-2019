@@ -18,15 +18,15 @@ public class Main {
 
         for (int i = 0; i < save.length; i += 2) {
             String name = save[i];
-            long broika = Long.parseLong(save[i + 1]);
+            long money = Long.parseLong(save[i + 1]);
 
 
             if (name.length() == 3) {
-                bag.addCash(new Cash(name, broika));
+                bag.addCash(new Cash(name, money));
             } else if (name.toLowerCase().endsWith("gem")) {
-                bag.addGems(new Gem(name, broika));
+                bag.addGems(new Gem(name, money));
             } else if (name.toLowerCase().equals("gold")) {
-                bag.addGold(new Gold(broika));
+                bag.addGold(new Gold(money));
             }
 
         }

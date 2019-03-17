@@ -44,7 +44,7 @@ public abstract class Character<T> implements GameObject<T> {
     }
 
     private void setUsername(String username){
-        this.username = "\"" + username + "\"";
+        this.username = username;
     }
 
 

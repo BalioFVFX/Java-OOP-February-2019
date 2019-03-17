@@ -16,7 +16,7 @@ public class Archangel extends Character<String> implements GameObject<String>{
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder = stringBuilder.append(super.getUsername());
         stringBuilder = stringBuilder.reverse();
-        stringBuilder = stringBuilder.append(super.getUsername().length() * 21);
+        stringBuilder = stringBuilder.append((super.getUsername().length() + 2) * 21);
 
         return stringBuilder.toString();
     }

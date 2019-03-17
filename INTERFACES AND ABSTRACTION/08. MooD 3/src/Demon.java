@@ -4,7 +4,7 @@ public class Demon extends Character<Integer> implements GameObject<Integer>{
 
     public Demon(String username, int level, Double specialPoints) {
         super(username, CHARACTER_TYPE, level, specialPoints);
-        this.setHashedPassword(this.getUsername().length() * 217);
+        this.setHashedPassword((this.getUsername().length() + 2) * 217);
     }
 
 
